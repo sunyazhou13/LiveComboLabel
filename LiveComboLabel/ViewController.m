@@ -36,7 +36,7 @@
     scaleAnimation.duration = duration;
     scaleAnimation.values = @[@3.f, @1.f, @1.2f, @1.f];
     scaleAnimation.keyTimes = @[@0.f, @0.16f, @0.28f, @0.4f];
-    scaleAnimation.removedOnCompletion = NO;
+    scaleAnimation.removedOnCompletion = YES;
     scaleAnimation.fillMode = kCAFillModeForwards;
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
