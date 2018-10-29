@@ -20,7 +20,7 @@
     self.danceCount = 0;
     
     //这种字体比较粗大 看起来比较好看
-    self.comboLabel.font = [UIFont fontWithName:@"AvenirNext-BoldItalic" size:36];
+    self.comboLabel.font = [UIFont fontWithName:@"AvenirNext-BoldItalic" size:50];
 }
 
 // 数字跳动
