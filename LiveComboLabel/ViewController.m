@@ -45,7 +45,7 @@
     animationGroup.removedOnCompletion = NO;
     animationGroup.fillMode = kCAFillModeForwards;
     
-    [self.comboLabel.layer addAnimation:animationGroup forKey:@"kGiftComboAnimationKey"];
+    [self.comboLabel.layer addAnimation:animationGroup forKey:@"kComboAnimationKey"];
 }
 
 - (IBAction)clickAction:(UIButton *)sender {
