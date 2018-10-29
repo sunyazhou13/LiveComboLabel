@@ -39,13 +39,13 @@
     scaleAnimation.removedOnCompletion = NO;
     scaleAnimation.fillMode = kCAFillModeForwards;
     
-    CAAnimationGroup *flashGroup = [CAAnimationGroup animation];
-    flashGroup.animations = @[opacityAnimation, scaleAnimation];
-    flashGroup.duration = duration;
-    flashGroup.removedOnCompletion = NO;
-    flashGroup.fillMode = kCAFillModeForwards;
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[opacityAnimation, scaleAnimation];
+    animationGroup.duration = duration;
+    animationGroup.removedOnCompletion = NO;
+    animationGroup.fillMode = kCAFillModeForwards;
     
-    [self.comboLabel.layer addAnimation:flashGroup forKey:@"kGiftComboAnimationKey"];
+    [self.comboLabel.layer addAnimation:animationGroup forKey:@"kGiftComboAnimationKey"];
 }
 
 - (IBAction)clickAction:(UIButton *)sender {
