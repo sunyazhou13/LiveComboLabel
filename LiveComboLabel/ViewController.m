@@ -42,7 +42,7 @@
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
     animationGroup.animations = @[opacityAnimation, scaleAnimation];
     animationGroup.duration = duration;
-    animationGroup.removedOnCompletion = NO;
+    animationGroup.removedOnCompletion = YES;
     animationGroup.fillMode = kCAFillModeForwards;
     
     [self.comboLabel.layer addAnimation:animationGroup forKey:@"kComboAnimationKey"];
